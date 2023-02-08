@@ -1,0 +1,14 @@
+clc;
+clear;
+close all;
+a = imread('cameraman.tif');
+imshow(a);
+impixelinfo;
+figure;
+imwrite(a, 'test.bmp');
+b = imread('IMG-20200212-WA0018.jpg');
+imshow(b);
+impixelinfo;
+info = dicominfo('CT-MONO2-16-ankle.dcm');
+Y = dicomreadinof
+disp(exit);

@@ -1,0 +1,15 @@
+clc;
+clear;
+close all;
+a = imread('cameraman.tif');
+imshow(a);
+impixelinfo;
+figure;
+imwrite(a, 'test.bmp');
+b = imread('1.jpg');
+imshow(b);
+impixelinfo;
+info = dicominfo('CT-MONO2-16-ankle.dcm');
+Y = dicomread(info);
+figure, imshow(Y,[]);
+disp(exit);

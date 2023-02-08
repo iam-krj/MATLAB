@@ -1,0 +1,18 @@
+a=imread('1.jpg');
+[r g b] = imsplit(a);
+figure; subplot(2,2,1); imshow(a);
+r(:,:,1)=r;
+r(:,:,2)=0;
+r(:,:,3)=0;
+ subplot(2,2,2);
+imshow(r);
+g(:,:,2)=g;
+g(:,:,1)=0;
+g(:,:,3)=0;
+ subplot(2,2,3);
+imshow(g);
+b(:,:,3)=b;
+b(:,:,1)=0;
+b(:,:,2)=0;
+subplot(2,2,4);
+imshow(b);
